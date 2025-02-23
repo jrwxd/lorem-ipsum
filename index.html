@@ -3,203 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorem Ipsum Properties</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
-    <style>
-        /* Basic reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Poppins', sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            line-height: 1.6;
-            font-size: 16px;
-        }
-        header {
-            background-color: #343a40;
-            color: #fff;
-            text-align: center;
-            padding: 60px 20px;
-            border-bottom: 2px solid #d1d1d1;
-        }
-        header h1 {
-            font-size: 3.2em;
-            font-weight: 600;
-            margin-bottom: 10px;
-        }
-        header p {
-            font-size: 1.2em;
-            font-weight: 300;
-            margin-bottom: 25px;
-        }
-
-        section {
-            padding: 50px 20px;
-            margin: 0 auto;
-            max-width: 1200px;
-        }
-        .property {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-        .property .card {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease-in-out;
-        }
-        .property .card:hover {
-            transform: translateY(-10px);
-        }
-        .property .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-        .property .card .card-content {
-            padding: 20px;
-        }
-        .property .card h3 {
-            font-size: 1.6em;
-            font-weight: 600;
-            color: #343a40;
-            margin-bottom: 10px;
-        }
-        .property .card p {
-            font-size: 1em;
-            margin-bottom: 15px;
-            color: #555;
-        }
-        .property .card button {
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .property .card button:hover {
-            background-color: #0056b3;
-        }
-
-        .contact {
-            background-color: #343a40;
-            color: #fff;
-            padding: 50px 20px;
-            text-align: center;
-            border-radius: 8px;
-            margin-top: 50px;
-        }
-        .contact h2 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-        .contact form input,
-        .contact form textarea {
-            width: 100%;
-            padding: 15px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-        .contact form button {
-            background-color: #28a745;
-            color: white;
-            border: none;
-            padding: 15px 30px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-        .contact form button:hover {
-            background-color: #218838;
-        }
-
-        footer {
-            background-color: #343a40;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-            font-size: 0.9em;
-        }
-        footer a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2.5em;
-            }
-            .property {
-                grid-template-columns: 1fr;
-            }
-            .contact h2 {
-                font-size: 2em;
-            }
-        }
-    </style>
+    <title>Ting Properties Rental Properties</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="description" content="Premium rental properties by Sean Ting">
 </head>
 <body>
-
-<header>
-    <h1>Lorem Ipsum Properties</h1>
-    <p>Your trusted source for prime local properties</p>
-</header>
-
-<section>
-    <h2>Our Properties</h2>
-    <div class="property">
-        <div class="card">
-            <img src="https://via.placeholder.com/600x400" alt="Property 1">
-            <div class="card-content">
-                <h3>Luxury Downtown Apartment</h3>
-                <p>Spacious, modern apartment in the heart of the city, close to shopping and dining.</p>
-                <button>Contact Us</button>
+    <header>
+        <nav>
+            <div class="logo">Sean Ting Properties</div>
+            <div class="contact-info">
+                <a href="tel:+1234567890">Call: (123) 456-7890</a>
+                <a href="mailto:contact@seanting.com">Email: contact@seanting.com</a>
             </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600x400" alt="Property 2">
-            <div class="card-content">
-                <h3>Cozy Suburban Home</h3>
-                <p>A family-friendly home with a large backyard and a quiet neighborhood atmosphere.</p>
-                <button>Contact Us</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Premium Rental Properties</h1>
+            <p>Discover Your Next Home</p>
+        </section>
+
+        <section class="properties" id="properties">
+            <h2>Available Properties</h2>
+            <div class="property-grid">
+                <!-- Properties will be loaded here via JavaScript -->
             </div>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/600x400" alt="Property 3">
-            <div class="card-content">
-                <h3>Spacious Urban Loft</h3>
-                <p>Modern and stylish loft with high ceilings and panoramic city views.</p>
-                <button>Contact Us</button>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<section class="contact">
-    <h2>Get In Touch</h2>
-    <form action="#">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit">Send Message</button>
-    </form>
-</section>
+        <section class="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm" onsubmit="return handleSubmit(event)">
+                <input type="text" placeholder="Name" required>
+                <input type="email" placeholder="Email" required>
+                <input type="tel" placeholder="Phone">
+                <select required>
+                    <option value="">Select Property</option>
+                    <option value="property1">Downtown Apartment</option>
+                    <option value="property2">Suburban House</option>
+                    <option value="property3">Luxury Condo</option>
+                </select>
+                <textarea placeholder="Message" required></textarea>
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+    </main>
 
-<footer>
-    <p>&copy; 2025 Lorem Ipsum Properties | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-</footer>
+    <footer>
+        <p>&copy; 2024 Sean Ting Properties. All rights reserved.</p>
+    </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
